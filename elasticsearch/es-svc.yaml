@@ -1,0 +1,39 @@
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: elk
+  name: elasticsearch
+  labels:
+    app: elasticsearch
+spec:
+  clusterIP: None
+  ports:
+  - name: rest
+    port: 9200
+  - name: transport
+    port: 9300
+  selector:
+    app: elasticsearchs
+
+---
+# if you want to use this as ingress
+
+#apiVersion: v1
+# kind: Service
+# metadata:
+#   name: elasticsearch
+#   labels:
+#     app: elasticsearch
+# spec:
+#   #type: LoadBalancer
+#   selector:
+#     app: elasticsearch
+#   ports:
+#   - name: http
+#     port: 9200
+#     targetPort: 9200
+#     protocol: TCP
+#   - name: transport
+#     port: 9300
+#     targetPort: 9300
+#     protocol: TCP
