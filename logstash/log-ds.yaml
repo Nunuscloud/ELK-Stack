@@ -18,7 +18,7 @@ spec:
         effect: NoSchedule
       containers:
       - name: logstash
-        image: docker.elastic.co/logstash/logstash-oss:8.7.1-amd64
+        image: docker.elastic.co/logstash/logstash-oss:7.11.0
         ports:
         - name: logstash-tcp
           containerPort: 5000
