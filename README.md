@@ -11,7 +11,7 @@ you may change this
 Release note
 https://www.docker.elastic.co/
 - ElasticSearch : docker.elastic.co/elasticsearch/elasticsearch-oss:7.10.2-amd64
-- Logstash : docker.elastic.co/logstash/logstash-oss:8.7.1-amd64
+- Logstash : docker.elastic.co/logstash/logstash-oss:7.11.0
 - Kibana : docker.elastic.co/kibana/kibana-oss:7.10.2
 
 ### ElasticSearch setting
